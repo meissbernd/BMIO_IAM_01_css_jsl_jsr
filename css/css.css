@@ -45,3 +45,7 @@ footer {
     background-color: var(--myapp-footer-background);
 
 }
+
+p {
+    margin: 0;
+}
