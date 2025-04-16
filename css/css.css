@@ -1,6 +1,12 @@
 /* variable declarations */
 :root {
     --myapp-color-background: limegreen;
+    --myapp-header-height: 60px;
+    --myapp-header-background: rgb(60, 60, 60);
+    --myapp-footer-height: 50px;
+    --myapp-footer-background: rgb(15, 15, 15);
+    --myapp-main-background: rgb(45, 45, 45);
+
 }
 
 html, body {
@@ -20,4 +26,22 @@ html, body {
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
+}
+
+/* base structure */
+header {
+    height: var(--myapp-header-height);
+    background-color: var(--myapp-header-background);
+}
+
+main {
+    height: calc(100vh - (var(--myapp-header-height) + var(--myapp-footer-height)));
+    background-color: var(--myapp-main-background);
+
+}
+
+footer {
+    height: var(--myapp-footer-height);
+    background-color: var(--myapp-footer-background);
+
 }
