@@ -62,4 +62,14 @@ header h1 {
     height: 100%;
     line-height: var(--myapp-header-height);
     text-transform: uppercase;
+    display: inline-block;
+}
+
+/* buttons */
+.myapp-align-left {
+    float: left;
+}
+
+.myapp-align-right {
+    float: right;
 }
