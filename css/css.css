@@ -3,9 +3,11 @@
     --myapp-color-background: limegreen;
     --myapp-header-height: 60px;
     --myapp-header-background: rgb(60, 60, 60);
+    --myapp-header-fontsize: 18pt;
     --myapp-footer-height: 50px;
     --myapp-footer-background: rgb(15, 15, 15);
     --myapp-main-background: rgb(45, 45, 45);
+    --myapp-default-space: 10px;
 
 }
 
@@ -38,6 +40,7 @@ main {
     height: calc(100vh - (var(--myapp-header-height) + var(--myapp-footer-height)));
     background-color: var(--myapp-main-background);
     overflow-y: scroll;
+    padding: var(--myapp-default-space); /* kann zu problemen führen (borderbox)*/
 
 }
 
@@ -49,4 +52,14 @@ footer {
 
 p {
     margin: 0;
+}
+
+/* header */
+header h1 {
+    margin: 0;
+    padding-left: var(--myapp-default-space);
+    font-size: var(--myapp-header-fontsize);
+    height: 100%;
+    line-height: var(--myapp-header-height);
+    text-transform: uppercase;
 }
