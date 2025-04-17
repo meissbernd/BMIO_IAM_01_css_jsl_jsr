@@ -8,6 +8,8 @@
     --myapp-footer-background: rgb(15, 15, 15);
     --myapp-main-background: rgb(45, 45, 45);
     --myapp-default-space: 10px;
+    --myapp-imgbutton-size: 40px;
+    --myapp-imgbutton-imgsize: 25px;
 
 }
 
@@ -72,4 +74,20 @@ header h1 {
 
 .myapp-align-right {
     float: right;
+}
+
+/* imgbuttons */
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-size: 0;
+    height: var(--myapp-imgbutton-size);
+    width: var(--myapp-imgbutton-size);
+    background-image: url("./img/png/menu_FILL0_wght400_GRAD0_opsz24.png");
+    filter: invert(90%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: var(--myapp-imgbutton-imgsize) var(--myapp-imgbutton-imgsize);
 }
