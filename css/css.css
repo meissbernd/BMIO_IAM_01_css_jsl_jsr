@@ -37,6 +37,7 @@ header {
 main {
     height: calc(100vh - (var(--myapp-header-height) + var(--myapp-footer-height)));
     background-color: var(--myapp-main-background);
+    overflow-y: scroll;
 
 }
 
