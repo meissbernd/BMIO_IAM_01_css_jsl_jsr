@@ -59,7 +59,7 @@ p {
 /* header */
 header h1 {
     margin: 0;
-    padding-left: var(--myapp-default-space);
+    /*padding-left: var(--myapp-default-space);*/
     font-size: var(--myapp-header-fontsize);
     height: 100%;
     line-height: var(--myapp-header-height);
@@ -77,7 +77,7 @@ header h1 {
 }
 
 /* imgbuttons */
-button {
+.myapp-imgbutton {
     margin: 0;
     padding: 0;
     border: none;
@@ -90,4 +90,29 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     background-size: var(--myapp-imgbutton-imgsize) var(--myapp-imgbutton-imgsize);
+}
+
+header .myapp-imgbutton {
+    margin-top: calc((var(--myapp-header-height) - var(--myapp-imgbutton-size)) / 2);
+}
+
+footer .myapp-imgbutton {
+    margin-top: calc((var(--myapp-footer-height) - var(--myapp-imgbutton-size)) / 2);
+}
+
+/* single img for buttons */
+.myapp-img-menu {
+    background-image: url("./img/png/menu_FILL0_wght400_GRAD0_opsz24.png");
+}
+
+.myapp-img-plus {
+    background-image: url("./img/png/add_FILL0_wght400_GRAD0_opsz24.png");
+}
+
+.myapp-img-options {
+    background-image: url("./img/png/more_vert_FILL0_wght400_GRAD0_opsz24.png");
+}
+
+.myapp-img-refresh {
+    background-image: url("./img/png/sync_FILL0_wght400_GRAD0_opsz24.png");
 }
