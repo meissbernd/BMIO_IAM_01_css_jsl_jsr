@@ -13,6 +13,7 @@
     --myapp-li-height: 60px;
     --myapp-li-fontsize: 20pt;
     --myapp-li-bordercolor: rgb(120, 120, 120);
+    --myapp-li-imgsize: 35px;
 
 }
 
@@ -141,8 +142,18 @@ main ul li h2 {
     line-height: var(--myapp-li-height);
     margin-left: var(--myapp-default-space);
     display: inline-block;
+    font-size: var(--myapp-li-fontsize);
+    font-weight: normal;
 }
 
 main li .myapp-imgbutton {
     margin-top: calc((var(--myapp-li-height) - var(--myapp-imgbutton-size)) / 2);
+}
+
+main li img {
+    height: var(--myapp-li-imgsize);
+    width: var(--myapp-li-imgsize);
+    margin-top: calc((var(--myapp-li-height) - var(--myapp-li-imgsize)) / 2);
+    margin-left: var(--myapp-default-space);
+    object-fit: cover;
 }
