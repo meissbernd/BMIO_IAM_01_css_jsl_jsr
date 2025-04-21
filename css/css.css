@@ -162,8 +162,8 @@ main li img {
 
 .myapp-tiles li {
     display: inline-block;
-    --myapp-num-of-tiles: 4;
-    --myapp-tiles-size: calc((100vw - ((var(--myapp-num-of-tiles) + 1) * var(--myapp-default-space))) / var(--myapp-num-of-tiles));
+    --myapp-tiles-per-line: 3;
+    --myapp-tiles-size: calc((100vw - ((var(--myapp-tiles-per-line) + 1) * var(--myapp-default-space))) / var(--myapp-tiles-per-line));
     height: var(--myapp-tiles-size);
     width: var(--myapp-tiles-size);
     margin-left: var(--myapp-default-space);
@@ -181,4 +181,22 @@ main li img {
     margin: 0;
     height: 100%;
     width: 100%;
+}
+
+@media (min-width: 400px) {
+    .myapp-tiles li {
+        --myapp-tiles-per-line: 4;
+    }
+}
+
+@media (min-width: 500px) {
+    .myapp-tiles li {
+        --myapp-tiles-per-line: 7;
+    }
+}
+
+@media (min-width: 600px) {
+    .myapp-tiles li {
+        --myapp-tiles-per-line: 10;
+    }
 }
