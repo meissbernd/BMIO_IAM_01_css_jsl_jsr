@@ -139,4 +139,10 @@ main ul li h2 {
     padding: 0;
     height: 100%;
     line-height: var(--myapp-li-height);
+    margin-left: var(--myapp-default-space);
+    display: inline-block;
+}
+
+main li .myapp-imgbutton {
+    margin-top: calc((var(--myapp-li-height) - var(--myapp-imgbutton-size)) / 2);
 }
