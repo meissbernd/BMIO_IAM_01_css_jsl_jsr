@@ -10,6 +10,9 @@
     --myapp-default-space: 10px;
     --myapp-imgbutton-size: 40px;
     --myapp-imgbutton-imgsize: 25px;
+    --myapp-li-height: 60px;
+    --myapp-li-fontsize: 20pt;
+    --myapp-li-bordercolor: rgb(120, 120, 120);
 
 }
 
@@ -42,7 +45,7 @@ main {
     height: calc(100vh - (var(--myapp-header-height) + var(--myapp-footer-height)));
     background-color: var(--myapp-main-background);
     overflow-y: scroll;
-    padding: var(--myapp-default-space);
+    /*padding: var(--myapp-default-space);*/
     box-sizing: border-box;
 }
 
@@ -115,4 +118,25 @@ footer .myapp-imgbutton {
 
 .myapp-img-refresh {
     background-image: url("./img/png/sync_FILL0_wght400_GRAD0_opsz24.png");
+}
+
+/* liste */
+main ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+main ul li {
+    margin: 0;
+    padding: 0;
+    height: var(--myapp-li-height);
+    border-bottom: 1px solid var(--myapp-li-bordercolor);
+}
+
+main ul li h2 {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    line-height: var(--myapp-li-height);
 }
