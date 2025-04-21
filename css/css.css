@@ -157,3 +157,28 @@ main li img {
     margin-left: var(--myapp-default-space);
     object-fit: cover;
 }
+
+/* Kachelansicht */
+
+.myapp-tiles li {
+    display: inline-block;
+    --myapp-num-of-tiles: 4;
+    --myapp-tiles-size: calc((100vw - ((var(--myapp-num-of-tiles) + 1) * var(--myapp-default-space))) / var(--myapp-num-of-tiles));
+    height: var(--myapp-tiles-size);
+    width: var(--myapp-tiles-size);
+    margin-left: var(--myapp-default-space);
+    margin-top: var(--myapp-default-space);
+    border: none;
+    float: left;
+}
+
+.myapp-tiles li * {
+    display: none
+}
+
+.myapp-tiles li img {
+    display: block;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
